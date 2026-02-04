@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Manrope", system-ui, sans-serif;
+  background-color: #f6fbff;
+  color: #1f2a37;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  @apply mx-auto max-w-6xl px-6 py-10;
+}
+
+.panel {
+  @apply mx-auto max-w-md rounded-2xl border border-slate-100 bg-white p-8 shadow-card;
+}
+
+.form {
+  @apply flex flex-col gap-3;
+}
+
+.form input,
+.form select,
+.form textarea {
+  @apply rounded-xl border border-slate-200 px-4 py-3 text-sm;
+}
+
+.cards {
+  @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-100 bg-white p-6 shadow-card;
+}
+
+.lesson-list {
+  @apply mt-6 grid gap-4;
+}
+
+.lesson-item {
+  @apply flex items-center justify-between gap-4 rounded-2xl border border-slate-100 bg-white p-5;
+}
+
+.error {
+  @apply text-sm font-semibold text-red-600;
+}
+
+.badge {
+  @apply rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700;
+}
+
+.lock {
+  @apply text-xs text-slate-400;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl bg-brand-500 px-4 py-2 text-sm font-semibold text-white;
+}
+
+.btn.small {
+  @apply px-3 py-1 text-xs;
+}
+
+.ghost {
+  @apply inline-flex items-center justify-center rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600;
+}

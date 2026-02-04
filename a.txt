@@ -1,0 +1,9 @@
+админка
+
+имя maksim
+почта maksim@mail.ru
+пароль maksim
+
+
+Docker запуск
+docker compose up --build
